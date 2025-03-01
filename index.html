@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Scatter Plot and Line Chart for Marriage and Divorce rate
+    </title>
+    <style>
+      .description {
+        text-align: center;
+        width: 80%;
+      }
+    </style>
+    <script src="http://d3js.org/d3.v7.js"></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="d3-chart"></div>
+    <div class="description">
+      <svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <circle r="5" cx="10" cy="35" fill="blue"></circle>
+          <text x="20" y="40" class="small">Marriage Rate</text>
+        </g>
+        <g>
+          <circle r="5" cx="10" cy="55" fill="pink"></circle>
+          <text x="20" y="60" class="small">Divorce Rate</text>
+        </g>
+        <g>
+          <circle r="5" cx="10" cy="75" fill="red"></circle>
+          <text x="20" y="80" class="small">Marriage Rate - Divorce Rate < 2</text>
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
